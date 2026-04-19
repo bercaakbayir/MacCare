@@ -1,0 +1,2 @@
+# MacCare session logs
+# Each line is a JSON object representing one query → tool calls → answer

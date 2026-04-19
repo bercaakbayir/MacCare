@@ -1,0 +1,101 @@
+2026-04-17 12:07:59,644 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({})
+2026-04-17 12:07:59,644 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({})
+2026-04-17 12:20:29,618 [maccare.watchdog] WARNING: [WATCHDOG][WARNING] 🟡 Battery Low: 17% remaining. Consider plugging in.
+2026-04-17 12:20:29,618 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-17 12:20:48,800 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({})
+2026-04-17 12:20:48,801 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({})
+2026-04-17 12:22:52,349 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({})
+2026-04-17 12:22:52,351 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({})
+2026-04-17 12:23:40,733 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-17 12:23:46,160 [maccare.watchdog] WARNING: [WATCHDOG][WARNING] 🟡 Battery Low: 17% remaining. Consider plugging in.
+2026-04-17 12:23:46,160 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-17 12:23:56,169 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({})
+2026-04-17 12:23:56,170 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({})
+2026-04-17 12:25:52,976 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-19 22:05:44,373 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:05:44,376 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:06:38,303 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:06:38,307 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:06:41,431 [maccare.orchestrator] INFO: [Supervisor] User query: ciao
+2026-04-19 22:06:41,432 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:06:41,443 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2026-04-19 22:06:41,443 [maccare.orchestrator] ERROR: Ollama call failed: model 'gemma3' not found (status code: 404)
+2026-04-19 22:06:57,148 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-19 22:06:58,444 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:06:58,447 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:07:00,655 [maccare.orchestrator] INFO: [Supervisor] User query: ciao
+2026-04-19 22:07:00,656 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:07:00,662 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 404 Not Found"
+2026-04-19 22:07:00,663 [maccare.orchestrator] ERROR: Ollama call failed: model 'gemma3' not found (status code: 404)
+2026-04-19 22:08:11,411 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:08:11,414 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:09:12,565 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-19 22:09:15,253 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:09:15,257 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:09:18,367 [maccare.orchestrator] INFO: [Supervisor] User query: ciao
+2026-04-19 22:09:18,367 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:09:18,542 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 400 Bad Request"
+2026-04-19 22:09:18,542 [maccare.orchestrator] ERROR: Ollama call failed: registry.ollama.ai/library/gemma3:4b does not support tools (status code: 400)
+2026-04-19 22:13:20,072 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:13:20,076 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:13:40,345 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-19 22:13:41,838 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:13:41,842 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:13:43,216 [maccare.orchestrator] INFO: [Supervisor] User query: ciao
+2026-04-19 22:13:43,216 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:14:36,689 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:14:36,695 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-19T22:14:36.696044", "query": "ciao", "tool_calls": 0, "observations": [], "answer_length": 165}
+2026-04-19 22:15:10,542 [maccare.orchestrator] INFO: [Supervisor] User query: what is the current disk usage?
+2026-04-19 22:15:10,543 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:15:12,365 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:15:12,367 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_disk_usage({'path': '/'})
+2026-04-19 22:15:12,368 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({'path': '/'})
+2026-04-19 22:15:12,370 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({})
+2026-04-19 22:15:12,370 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({})
+2026-04-19 22:17:00,302 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-19 22:17:01,895 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:17:01,900 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:17:07,701 [maccare.orchestrator] INFO: [Supervisor] User query: what is the current disk usage?
+2026-04-19 22:17:07,702 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:17:09,877 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:17:09,878 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_disk_usage({'path': None, 'top_n': 0})
+2026-04-19 22:17:09,879 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({'path': None, 'top_n': 0})
+2026-04-19 22:17:09,879 [maccare.orchestrator] INFO: [Supervisor] Tool get_disk_usage completed in 0.0s
+2026-04-19 22:17:09,879 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-19 22:17:17,436 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:17:17,437 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-19T22:17:17.437781", "query": "what is the current disk usage?", "tool_calls": 1, "observations": ["[Tool: get_disk_usage | 0.0s]\n{\n  \"tool\": \"get_disk_usage\",\n  \"status\": \"ok\",\n  \"total_bytes\": 245107195904,\n  \"used_bytes\": 190007357440,\n  \"free_bytes\": 55099838464,\n  \"total_human\": \"228.3 GB\",\n  \"used_human\": \"177.0 GB\",\n  \"free_human\": \"51.3 GB\",\n  \"used_percent\": 77.5,\n  \"health\": \"healthy\",\n  \"health_evaluation\": {\n    \"level\": \"\\u2705 HEALTHY\",\n    \"message\": \"Disk usage is at 77.5% \\u2014 within healthy range.\",\n    \"advice\": null\n  }\n}"], "answer_length": 304}
+2026-04-19 22:17:41,992 [maccare.orchestrator] INFO: [Supervisor] User query: which programs consumes the memory most ?
+2026-04-19 22:17:41,993 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:17:47,907 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:17:47,908 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_top_memory_processes({'top_n': '10'})
+2026-04-19 22:17:47,908 [maccare.orchestrator] INFO: [MemoryAgent] → get_top_memory_processes({'top_n': '10'})
+2026-04-19 22:17:47,936 [maccare.orchestrator] INFO: [Supervisor] Tool get_top_memory_processes completed in 0.0s
+2026-04-19 22:17:47,936 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-19 22:18:03,895 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:18:03,897 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-19T22:18:03.898188", "query": "which programs consumes the memory most ?", "tool_calls": 1, "observations": ["[Tool: get_top_memory_processes | 0.0s]\n{\n  \"tool\": \"get_top_memory_processes\",\n  \"status\": \"error\",\n  \"error\": \"slice indices must be integers or None or have an __index__ method\"\n}"], "answer_length": 720}
+2026-04-19 22:21:36,648 [maccare.orchestrator] INFO: [Supervisor] User query: which files should I delete to increase my free space in disk?
+2026-04-19 22:21:36,651 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:21:42,887 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:21:42,888 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_largest_folders({'path': '/', 'top_n': '1'})
+2026-04-19 22:21:42,888 [maccare.orchestrator] INFO: [StorageAgent] → get_largest_folders({'path': '/', 'top_n': '1'})
+2026-04-19 22:22:20,089 [maccare.orchestrator] INFO: [Supervisor] Tool get_largest_folders completed in 37.2s
+2026-04-19 22:22:20,090 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-19 22:22:41,631 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:22:41,638 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-19T22:22:41.638965", "query": "which files should I delete to increase my free space in disk?", "tool_calls": 1, "observations": ["[Tool: get_largest_folders | 37.2s]\n{\n  \"tool\": \"get_largest_folders\",\n  \"status\": \"error\",\n  \"error\": \"slice indices must be integers or None or have an __index__ method\"\n}"], "answer_length": 988}
+2026-04-19 22:24:33,288 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-19 22:24:33,293 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-19 22:24:38,967 [maccare.orchestrator] INFO: [Supervisor] User query: what is the current battery?
+2026-04-19 22:24:38,968 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-19 22:24:46,364 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:24:46,366 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_battery_info({'path': None, 'depth': None, 'type': None, 'description': 'Default: null'})
+2026-04-19 22:24:46,366 [maccare.orchestrator] INFO: [SystemAgent] → get_battery_info({'path': None, 'depth': None, 'type': None, 'description': 'Default: null'})
+2026-04-19 22:24:46,657 [maccare.orchestrator] INFO: [Supervisor] Tool get_battery_info completed in 0.3s
+2026-04-19 22:24:46,657 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-19 22:24:50,197 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-19 22:24:50,199 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-19T22:24:50.199729", "query": "what is the current battery?", "tool_calls": 1, "observations": ["[Tool: get_battery_info | 0.3s]\n{\n  \"tool\": \"get_battery_info\",\n  \"status\": \"ok\",\n  \"percent\": 100,\n  \"charging\": true,\n  \"cycle_count\": 269,\n  \"condition\": \"Normal\",\n  \"max_capacity_percent\": null,\n  \"time_remaining_min\": 0,\n  \"health\": \"healthy\",\n  \"health_evaluation\": {\n    \"level\": \"\\u2705 HEALTHY\",\n    \"message\": \"Battery health looks good.\",\n    \"advice\": null\n  }\n}"], "answer_length": 105}
+2026-04-19 22:24:57,863 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
