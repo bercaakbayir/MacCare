@@ -1,0 +1,11 @@
+.DS_Store
+.git/
+.gitignore
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+logs/*
+!logs/.gitkeep
+*.log
