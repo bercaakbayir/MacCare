@@ -99,3 +99,37 @@
 2026-04-19 22:24:50,199 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
 {"timestamp": "2026-04-19T22:24:50.199729", "query": "what is the current battery?", "tool_calls": 1, "observations": ["[Tool: get_battery_info | 0.3s]\n{\n  \"tool\": \"get_battery_info\",\n  \"status\": \"ok\",\n  \"percent\": 100,\n  \"charging\": true,\n  \"cycle_count\": 269,\n  \"condition\": \"Normal\",\n  \"max_capacity_percent\": null,\n  \"time_remaining_min\": 0,\n  \"health\": \"healthy\",\n  \"health_evaluation\": {\n    \"level\": \"\\u2705 HEALTHY\",\n    \"message\": \"Battery health looks good.\",\n    \"advice\": null\n  }\n}"], "answer_length": 105}
 2026-04-19 22:24:57,863 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.
+2026-04-21 10:45:18,836 [httpx] INFO: HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-04-21 10:45:18,842 [maccare.watchdog] WARNING: [WATCHDOG][CRITICAL] 🔴 CRITICAL: Battery at 10%! Connect charger immediately.
+2026-04-21 10:45:18,842 [maccare.watchdog] INFO: ⚡ EnergyWatchdog started (poll every 30s)
+2026-04-21 10:45:28,276 [maccare.orchestrator] INFO: [Supervisor] User query: what is disk utility
+2026-04-21 10:45:28,277 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-21 10:45:44,253 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:45:44,262 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_disk_usage({'path': '/'})
+2026-04-21 10:45:44,262 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({'path': '/'})
+2026-04-21 10:45:44,265 [maccare.orchestrator] INFO: [Supervisor] Tool get_disk_usage completed in 0.0s
+2026-04-21 10:45:44,265 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-21 10:46:04,887 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:46:04,895 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-21T10:46:04.895592", "query": "what is disk utility", "tool_calls": 1, "observations": ["[Tool: get_disk_usage | 0.0s]\n{\n  \"tool\": \"get_disk_usage\",\n  \"status\": \"ok\",\n  \"total_bytes\": 245107195904,\n  \"used_bytes\": 195330478080,\n  \"free_bytes\": 49776717824,\n  \"total_human\": \"228.3 GB\",\n  \"used_human\": \"181.9 GB\",\n  \"free_human\": \"46.4 GB\",\n  \"used_percent\": 79.7,\n  \"health\": \"healthy\",\n  \"health_evaluation\": {\n    \"level\": \"\\u2705 HEALTHY\",\n    \"message\": \"Disk usage is at 79.7% \\u2014 within healthy range.\",\n    \"advice\": null\n  }\n}"], "answer_length": 1070}
+2026-04-21 10:46:25,273 [maccare.orchestrator] INFO: [Supervisor] User query: what is the percentage of disk utility?
+2026-04-21 10:46:25,274 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-21 10:46:30,647 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:46:30,649 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_disk_usage({'path': '/'})
+2026-04-21 10:46:30,649 [maccare.orchestrator] INFO: [StorageAgent] → get_disk_usage({'path': '/'})
+2026-04-21 10:46:30,650 [maccare.orchestrator] INFO: [Supervisor] Tool get_disk_usage completed in 0.0s
+2026-04-21 10:46:30,650 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-21 10:46:42,907 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:46:42,912 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-21T10:46:42.912203", "query": "what is the percentage of disk utility?", "tool_calls": 1, "observations": ["[Tool: get_disk_usage | 0.0s]\n{\n  \"tool\": \"get_disk_usage\",\n  \"status\": \"ok\",\n  \"total_bytes\": 245107195904,\n  \"used_bytes\": 195336536064,\n  \"free_bytes\": 49770659840,\n  \"total_human\": \"228.3 GB\",\n  \"used_human\": \"181.9 GB\",\n  \"free_human\": \"46.4 GB\",\n  \"used_percent\": 79.7,\n  \"health\": \"healthy\",\n  \"health_evaluation\": {\n    \"level\": \"\\u2705 HEALTHY\",\n    \"message\": \"Disk usage is at 79.7% \\u2014 within healthy range.\",\n    \"advice\": null\n  }\n}"], "answer_length": 555}
+2026-04-21 10:47:32,497 [maccare.orchestrator] INFO: [Supervisor] User query: is there any redundant file that I can clean safely in my mac?
+2026-04-21 10:47:32,500 [maccare.orchestrator] INFO: [Supervisor] ReAct step 1
+2026-04-21 10:47:40,280 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:47:40,283 [maccare.orchestrator] INFO: [Supervisor] Calling tool: get_safe_to_delete({'path': None, 'top_n': 10})
+2026-04-21 10:47:40,283 [maccare.orchestrator] INFO: [StorageAgent] → get_safe_to_delete({'path': None, 'top_n': 10})
+2026-04-21 10:47:42,573 [maccare.orchestrator] INFO: [Supervisor] Tool get_safe_to_delete completed in 2.3s
+2026-04-21 10:47:42,574 [maccare.orchestrator] INFO: [Supervisor] ReAct step 2
+2026-04-21 10:48:14,579 [httpx] INFO: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-04-21 10:48:14,590 [maccare.orchestrator] INFO: [Supervisor] Final answer generated.
+{"timestamp": "2026-04-21T10:48:14.590318", "query": "is there any redundant file that I can clean safely in my mac?", "tool_calls": 1, "observations": ["[Tool: get_safe_to_delete | 2.3s]\n{\n  \"tool\": \"get_safe_to_delete\",\n  \"status\": \"ok\",\n  \"total_recoverable_bytes\": 5310521344,\n  \"total_recoverable_human\": \"4.9 GB\",\n  \"items\": [\n    {\n      \"label\": \"User App Caches\",\n      \"path\": \"/Users/bercaakbayir/Library/Caches\",\n      \"delete_cmd\": \"rm -rf ~/Library/Caches/*/\",\n      \"safe\": true,\n      \"size_bytes\": 4436856832,\n      \"size_human\": \"4.1 GB\"\n    },\n    {\n      \"label\": \"npm Cache\",\n      \"path\": \"/Users/bercaakbayir/.npm/_cacache\",\n      \"delete_cmd\": \"npm cache clean --force\",\n      \"safe\": true,\n      \"size_bytes\": 423936000,\n      \"size_human\": \"404.3 MB\"\n    },\n    {\n      \"label\": \"Homebrew Cache\",\n      \"path\": \"/Users/bercaakbayir/Library/Caches/Homebrew\",\n      \"delete_cmd\": \"brew cleanup\",\n      \"safe\": true,\n      \"size_bytes\": 190664704,\n      \"size_human\": \"181.8 MB\"\n    },\n    {\n      \"label\": \"User Logs\",\n      \"path\": \"/Users/bercaakbayir/Library/Logs\",\n      \"delete_cmd\": \"rm -rf ~/Library/Logs/*/\",\n      \"safe\": true,\n      \"size_bytes\": 161677312,\n      \"size_human\": \"154.2 MB\"\n    },\n    {\n      \"label\": \"pip Cache\",\n      \"path\": \"/Users/bercaakbayir/Library/Caches/pip\",\n      \"delete_cmd\": \"pip cache purge\",\n      \"safe\": true,\n      \"size_bytes\": 97378304,\n      \"size_human\": \"92.9 MB\"\n    },\n    {\n      \"label\": \"Crash Reports\",\n      \"path\": \"/Users/bercaakbayir/Library/Logs/DiagnosticReports\",\n      \"delete_cmd\": \"rm -rf ~/Library/Logs/DiagnosticReports/*\",\n      \"safe\": true,\n      \"size_bytes\": 8192,\n      \"size_human\": \"8.0 KB\"\n    }\n  ]\n}"], "answer_length": 1214}
+2026-04-21 10:48:24,864 [maccare.watchdog] INFO: ⚡ EnergyWatchdog stopped.

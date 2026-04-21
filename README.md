@@ -21,19 +21,9 @@
 
 ## Quick Start
 
-### 1. Build & Run via Docker (Recommended)
+### 1. Install dependencies via `uv`
 
-```bash
-# Build the Docker image natively
-docker build -t maccare .
-
-# Run the interactive agent (connecting to your host's Ollama)
-docker run -it -e OLLAMA_HOST=http://host.docker.internal:11434 maccare
-```
-
-### Alternatively: Install Locally via `uv`
-
-If you are running the project without Docker, use `uv` instead of `pip`:
+Use Astral's `uv` for ultra-fast dependency management:
 
 ```bash
 cd /Users/bercaakbayir/Desktop/projects/MacCare
@@ -53,9 +43,7 @@ ollama pull llama3.2
 ollama serve
 ```
 
-### 3. Run MacCare Locally
-
-If running outside of Docker locally, use `uv run`:
+### 3. Run MacCare
 
 ```bash
 # LLM mode (requires Ollama running)
@@ -160,7 +148,6 @@ MacCare utilizes a robust **ReAct (Reason → Act → Observe → Reflect)** eng
 MacCare/
 ├── app.py                   # Terminal CLI (Rich)
 ├── pyproject.toml           # uv dependency configs
-├── Dockerfile               # Local docker instructions
 ├── core/
 │   ├── orchestrator.py      # Supervisor + ReAct loop + sub-agents
 │   ├── safety_audit.py      # Knowledge base cross-checker
